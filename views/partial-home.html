@@ -1,2 +1,9 @@
 <h1>This is home</h1>
-<p>This is home content</p>
+<p>Some content goes here</p>
+
+    <h3>Nested views</h3>  
+    <p>Do you like Apples?</p>
+    <a ui-sref=".list" ng-hide="showYes" ng-click="showClose=true" class="btn btn-primary">Yes</a>
+    <a ui-sref="." ng-show="showClose" ng-click="showClose=false" class="btn btn-danger">Close</a>
+
+<div ui-view></div>
